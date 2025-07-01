@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+            /* ৩টি কলাম ট্র্যাক */
+            grid-template-rows: 80px auto 60px;
+            /* ৩টি সারি ট্র্যাক */
+            gap: 10px;
+            height: 300px;
+            background: #f0f0f0;
+            padding: 10px;
+            font-family: "Siyam Rupali", sans-serif;
+        }
+
+        .header {
+            grid-area: 1 / 1 / 2 / 4;
+            /* সারি-১, কলাম-১ থেকে ৪ */
+            background: #FF6B6B;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nav {
+            grid-area: 2 / 1 / 3 / 2;
+            /* সারি-২, কলাম-১ */
+            background: #4ECDC4;
+            padding: 10px;
+        }
+
+        .content {
+            grid-area: 2 / 2 / 3 / 4;
+            /* সারি-২, কলাম-২ থেকে ৪ */
+            background: #FFD166;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: 3 / 1 / 4 / 4;
+            /* সারি-৩, কলাম-১ থেকে ৪ */
+            background: #6A0572;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">হেডার (গ্রিড এরিয়া)</div>
+        <div class="nav">নেভিগেশন (গ্রিড এরিয়া)</div>
+        <div class="content">কন্টেন্ট (গ্রিড এরিয়া)</div>
+        <div class="footer">ফুটার (গ্রিড এরিয়া)</div>
+    </div>
+</body>
+
+</html>
